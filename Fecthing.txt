@@ -1,0 +1,12 @@
+To download the changes that have appeared in the remote, we run the following
+command:
+
+  $ git fetch remote_name
+
+This updates our local branches from the remote remote_name. (We can skip the
+name of the remote by running just git fetch, and the command will update the
+branches of the local repository from the remote origin.)
+
+When you clone a repository or set an upstream, local versions of their branches
+are also maintained. The fetch command updates these local versions with the
+latest commits from the remote.
