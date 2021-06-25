@@ -10,3 +10,15 @@ branches of the local repository from the remote origin.)
 When you clone a repository or set an upstream, local versions of their branches
 are also maintained. The fetch command updates these local versions with the
 latest commits from the remote.
+
+Following a fetch, to update your local branch you need to merge it with the
+appropriate branch from the remote. For instance, if you’re planning to update
+the local master branch with the remote’s master branch, run the following
+command:
+
+    $ git merge origin/master
+
+This is basically merging the branch origin/master with your current active
+branch. Following the fetch, your origin/master is updated with the latest
+commits of the branch on the remote. You have therefore succeeded in updating
+a local branch with the latest commits from a remote branch.
